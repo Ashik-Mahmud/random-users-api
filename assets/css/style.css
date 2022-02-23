@@ -31,6 +31,7 @@ body{
     background: var(--secondary-color);
     padding: 1rem;
     position: relative;
+    max-height: 480px;
 }
 .wrapper .avatar{
     width: 150px;
@@ -65,4 +66,57 @@ body{
 
 .address{
     position: relative;
+    margin-top:2rem;
+}
+.address ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.address .address-header .header-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+}
+.header-title li{
+    cursor: pointer;
+    user-select: none;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+}
+.header-title li.active{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.address ul.display-info{
+    padding: 1rem;
+    background-color: #f2f2f2;
+    display: flex;
+    overflow: hidden;
+}
+ul.display-info li.location,
+ul.display-info li.login-info,
+ul.display-info li.personal{
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    margin: 0rem 0rem;
+    min-width: 375px;
+    border-right: 1px solid;
+    margin-right: 1rem;
+}
+.display-info li ul li{
+    margin: .4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: .5rem;
+}
+.display-info li ul li span{
+    font-size: .9rem;
+    color: #444;
 }
