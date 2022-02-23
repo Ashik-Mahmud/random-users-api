@@ -88,6 +88,7 @@ body{
     user-select: none;
     padding: .6rem 1rem;
     border-radius: 4px;
+    transition: all 0.2s ease;
 }
 .header-title li.active{
     background-color: var(--primary-color);
@@ -100,15 +101,14 @@ body{
     display: flex;
     overflow: hidden;
 }
-ul.display-info li.location,
-ul.display-info li.login-info,
-ul.display-info li.personal{
+ul.display-info .slide{
     padding: 1rem;
     background-color: var(--secondary-color);
     margin: 0rem 0rem;
     min-width: 375px;
-    border-right: 1px solid;
     margin-right: 1rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
 }
 .display-info li ul li{
     margin: .4rem 0rem;
