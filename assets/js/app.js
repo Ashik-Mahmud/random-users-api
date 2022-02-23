@@ -77,7 +77,10 @@ const displayUsers = (user) =>{
 const headerTabs = document.getElementsByClassName('tab-button');
 // const headerTitle = document.querySelectorAll(".header-title li");
 // console.log(headerTitle)
-console.log(headerTabs);
+for(const tab of headerTabs){
+    console.log(tab, 'Yeah')
+}
+console.log(headerTabs.length);
 
 
 
