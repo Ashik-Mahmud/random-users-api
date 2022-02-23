@@ -32,6 +32,8 @@ body{
     padding: 1rem;
     position: relative;
     max-height: 480px;
+    border-radius: 5px;
+    box-shadow: 0px 0p 15px rgba(0,0,0,0.1);
 }
 .wrapper .avatar{
     width: 150px;
@@ -41,7 +43,7 @@ body{
     border: 12px solid var(--secondary-color);
     border-radius: 50%;
     overflow: hidden;
-    top: -6.5rem;
+    top: -6rem;
 }
 .avatar img{
     width: 100%;
